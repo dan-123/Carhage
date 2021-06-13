@@ -9,9 +9,10 @@ import UIKit
 
 open class ViewElement: UIViewController {
     
-    lazy var textLabel: UILabel = {
+    public var textLabel: UILabel = {
         let label = UILabel()
         label.text = "My carthage"
+        label.font = UIFont.systemFont(ofSize: 18)
         return label
     }()
 }
